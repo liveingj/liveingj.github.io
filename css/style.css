@@ -1,0 +1,98 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background-color: #dee5a7;
+	background-image: url(../images/cuba.jpg);
+	background-position: 50% 50%;
+	background-clip: 50% 50%;
+	background-repeat: no-repeat;
+/* 	background-size: cover; fits image to screen*/
+	
+}
+
+h1 {
+	font-size: 50px;
+	text-align: center;
+	margin: 0;
+	font-family: 'Mate SC', serif;
+
+}
+h2 {
+	font-size: 30px;
+	text-align: center;
+	margin-top: 0;
+	font-weight: normal;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	font-family: 'Mate SC', serif;
+	text-shadow: 5px 5px 5px black;
+
+}
+
+
+img {display: block;
+	margin:  0 auto;
+	border: 30px solid white;
+	border-radius: 50%;
+	width: 400px;
+
+}
+p,
+ul,
+ol {
+	line-height: 1.6;
+	list-style: none;
+	font-family: 'Mate SC', serif;
+}
+a {
+	color: rgb(68, 140, 255);
+	font-weight: bold;
+	text-decoration: none;
+	cursor: crosshair;
+}
+
+a:hover {
+	text-decoration: underline;
+	transform: rotateX(150deg);
+}
+
+h3 {
+	font-family: 'Mate SC', serif;
+	margin-bottom: 0;
+	display: inline-block;
+}
+
+h3:hover {
+	cursor: crosshair;
+	text-decoration: underline;
+}
+
+h3 + * {
+	display: none;
+}
+
+.main {
+	background-color: rgba(255,255,255,0.75);
+	border-radius: 50px;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 30px;
+	box-shadow: 0 0 10px 5px white;
+}
+
+.flash {
+   animation-name: flash;
+    animation-duration: 0.1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes flash {
+    from {color: black;}
+    to {color: white;}
+}
