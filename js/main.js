@@ -30,6 +30,8 @@ if (age >= 20) {
 // when the pagr has loaded
 $(function() {
 
+	$('img').on('click'), askQuestions);
+
 	// when th user clicks an h3 element. Quote marks calls up from css
 	$('h3').on('click', function() {
 
